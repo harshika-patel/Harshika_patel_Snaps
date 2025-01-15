@@ -1,0 +1,33 @@
+@use './fonts' as *;
+@use './variables' as *;
+@use  './mixins' as *;
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Newsreader";
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+}
+h1{
+    font-family: "Outfit";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.title{
+    font-family: "Outfit";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.label{
+    font-family: "Newsreader";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+}
