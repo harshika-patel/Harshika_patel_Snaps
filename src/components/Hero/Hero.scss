@@ -1,0 +1,17 @@
+.hero{
+    padding-top:24px;
+    font-family: "Newsreader";
+    &__para{
+        font-family: "Outfit";
+        font-weight: light;
+        padding-bottom: 16px;
+    }
+    &__heading{
+        font-family: "Newsreader";
+        font-weight: 300;
+        font-style: normal;
+        &-span{
+            font-style: italic;
+        }
+    }
+}

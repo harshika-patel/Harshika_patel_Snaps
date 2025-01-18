@@ -1,0 +1,52 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/globals" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__wordmark {
+    font-family: "Newsreader";
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 400;
+    color: $primaryColor_black;
+    padding-bottom: 24px;
+  }
+  &__para {
+    padding-bottom: 16px;
+    font-weight: 500;
+  }
+  &__link a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-weight: 500;
+    color:$primaryColor_black;
+   
+  }
+  &__icon {
+    padding-top: 16px;
+   a{
+    padding-right: 8px;
+   }
+  }
+  &__lists{
+    padding-top: 16px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+&__list{
+    padding-right: 8px;
+    list-style: none;
+    font-weight: 300;
+    color: $secondaryColor_seaGreen;
+}    
+        
+
+  }
+
+
