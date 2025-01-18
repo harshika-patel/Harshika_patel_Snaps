@@ -1,0 +1,34 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/globals" as *;
+
+.photos{
+margin-top: 48px;
+ display:flex;
+ flex-direction: column;
+ background-color:$secondaryColor_sage;
+ border: 1px solid $secondaryColor_seaGreen;
+ border-radius: 12px;
+ margin-bottom: 16px;
+ &__img{
+    border-radius: 12px 12px 0 0;
+ }
+ &__tag-list{
+   
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    &-item{
+        margin:8px;
+        padding:6px 8px;
+        border:1px solid $secondaryColor_seaGreen; ;
+        border-radius: 12px;
+        font-weight: 500;
+        background-color:$secondaryColor_white;
+    }
+    &-item:hover{
+        background-color: $secondaryColor_seaGreen;
+    }
+   }
+}
