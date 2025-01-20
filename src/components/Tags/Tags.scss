@@ -1,0 +1,50 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/globals" as *;
+
+.tags-panel{
+    display:flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    background-color: $secondaryColor_sage;
+    padding:0;
+    position: relative;
+    top:50px;
+   &-title{
+    margin-top: 16px;
+    font-weight: 500;
+    padding-left:8px;
+    color:$primaryColor_black;
+
+   }
+    &__flex-count{
+        display: flex;
+        flex-wrap: wrap;
+        padding:8px 0;
+        color:$secondaryColor_sage;
+    }
+    &__tag{
+        padding:8px;
+        margin: 8px;
+        border:2px solid $primaryColor_green;
+        color:$primaryColor_green;
+        background-color: white;
+        font-weight: bold;
+        border-radius: 12px;
+        &--selected {
+            font-weight: bold;
+            color: white;
+            background-color:$primaryColor_green;
+        }
+    }
+}
+@include tablet{
+    .tags-panel{
+        &__title{
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    
+}

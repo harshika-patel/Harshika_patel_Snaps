@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
   &__wordmark {
     font-family: "Newsreader";
     font-size: 32px;
@@ -15,6 +16,7 @@
     color: $primaryColor_black;
     padding-bottom: 24px;
   }
+  
   &__para {
     padding-bottom: 16px;
     font-weight: 500;
@@ -38,6 +40,7 @@
     display: flex;
     flex-direction: row;
     list-style: none;
+    margin-bottom: 16px;
   }
 &__list{
     padding-right: 8px;
@@ -49,4 +52,58 @@
 
   }
 
+  @include tablet{
+    .footer{
+     
+      margin-top: 2.25rem;
+      &__section1{
+        display: flex;
+        flex-direction: row;
+      }
+      &__wordmark {
+        margin-right: 2.5rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        padding-right: 2.5rem;
+      }
+      
+      &__para{
+       
+        margin-left: 4.5rem;
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+        padding-left: 4.5rem;
+        
+      }
+      &__link a {
+        
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+        padding-left: 2.25rem;
+        margin-left: 2.25rem;
+       
+       
+      }
+      &__icon{
+        margin-top:4rem;
+      }
+      
+    }
 
+  }
+  @include desktop{
+    .footer{
+    &__mainSection{
+      display: flex;
+      flex-direction: row;
+      
+    }
+    &__icon{
+      padding: 0;
+      margin: 0;
+      padding-left: 2.25rem;
+      margin-left: 2.25rem;
+      padding-bottom: 2.25rem;
+    }
+    }
+  }

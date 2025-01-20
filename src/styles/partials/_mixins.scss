@@ -3,7 +3,7 @@
 
 
 @mixin tablet{
-    @media (min-width: $tablet-breakpoint1){
+    @media (min-width: $tablet-breakpoint){
       @content;
     }
   }
