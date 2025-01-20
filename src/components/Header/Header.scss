@@ -3,63 +3,59 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/globals" as *;
 
-.header{
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 1rem;
+  position: fixed;
+  &__wordmark {
+    font-family: "Newsreader";
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: $primaryColor_black;
+  }
+  &__filter-btn {
+    border: 2px solid $primaryColor_green;
+    border-radius: 1.5625rem;
+    color: $primaryColor_green;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    position: fixed;
+    right: 0.5rem;
+
+    text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    left: 1rem;
-    position: fixed;
-    &__wordmark{
-        font-family: "Newsreader";
-        font-size: 2rem;
-        line-height:2rem;
-        font-weight: 400;
-        color:$primaryColor_black;
-    }
-    &__filter-btn{
-      border:2px solid $primaryColor_green;
-      border-radius: 1.5625rem;
-      color:$primaryColor_green;
-      padding:0.5rem 1rem;
-      font-weight: 500;
-      position: fixed;
-      right:0.5rem;
-      
+    &--icon {
       text-align: center;
-      display: flex;
-      flex-direction: row;
-      &--icon{
-        text-align: center;
-        padding:0.5rem 1rem;
-        margin-left:0.5rem;
-        background-image: url('../../assets/Icons/Filter.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        // color:$primaryColor_green;
-        // &:hover{
-        //   background-image: url('../../assets/Icons/Filter_duplicate.svg');
-        // }
+      padding: 0.5rem 1rem;
+      margin-left: 0.5rem;
+      background-image: url("../../assets/Icons/Filter.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    &:hover {
+      background-color: $primaryColor_green;
+      color: $secondaryColor_white;
+      &--icon {
+        background-image: url("../../assets/Icons/Filter_duplicate.png");
       }
-      &:hover{
-        background-color: $primaryColor_green;
-        color:$secondaryColor_white;
-        &--icon{
-        background-image: url('../../assets/Icons/Filter_duplicate.svg');
-      }
-      }
+    }
   }
 }
-    
-  @include tablet{
-    .header{
-     left: 1.5rem;
-      &__wordmark{
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-      }
-      &__filter-btn{
-        padding:0.6875rem 1.375rem;
-        right:0.6875rem;
-      }
+
+@include tablet {
+  .header {
+    left: 1.5rem;
+    &__wordmark {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+    &__filter-btn {
+      padding: 0.6875rem 1.375rem;
+      right: 0.6875rem;
     }
   }
+}

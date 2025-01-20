@@ -2,39 +2,39 @@
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/globals" as *;
-.hero{
-    padding-top:1.5rem;
-    margin-top:1.5rem;
-   font-family: "Newsreader";
-    &__para{
-        font-family: "Outfit";
-        font-weight: light;
-        margin-top:1.5rem;
-        padding-bottom: 1rem;
+.hero {
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  font-family: "Newsreader";
+  &__para {
+    font-family: "Outfit";
+    font-weight: light;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  &__heading {
+    font-family: "Newsreader";
+    font-weight: 300;
+    font-size: 1.625rem;
+    line-height: 2.375rem;
+    font-style: normal;
+    &-span {
+      font-style: italic;
     }
-    &__heading{
-        font-family: "Newsreader";
-        font-weight: 300;
-        font-size: 1.625rem;
-        line-height: 2.375rem;
-        font-style: normal;
-        &-span{
-            font-style: italic;
-        }
-    }
+  }
 }
-@include tablet{
-    .hero{
+@include tablet {
+  .hero {
     width: 100%;
-    padding-top:2.25rem;
-    &__para{
-        font-size: 0.875rem;
-        padding-bottom: 1.5rem;
+    padding-top: 2.25rem;
+    &__para {
+      font-size: 0.875rem;
+      padding-bottom: 1.5rem;
     }
-    &__heading{
-        width: 100%;
-        font-size: 3.25rem;
-        line-height: 4.125rem;
+    &__heading {
+      width: 100%;
+      font-size: 3.25rem;
+      line-height: 4.125rem;
     }
-}
+  }
 }

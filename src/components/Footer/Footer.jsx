@@ -7,9 +7,8 @@ export default function Footer() {
   return (
     <section className="footer">
       <div className="footer__mainSection">
-      
         <div className="footer__section1">
-        <p className="footer__wordmark">Snaps</p>
+          <p className="footer__wordmark">Snaps</p>
           <div className="footer__para">
             <p>For photographers</p>
             <p>Hire talent</p>

@@ -7,18 +7,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
   &__wordmark {
     font-family: "Newsreader";
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 2rem;
+    line-height: 2rem;
     font-weight: 400;
     color: $primaryColor_black;
-    padding-bottom: 24px;
+    padding-bottom: 1.5rem;
   }
-  
+
   &__para {
-    padding-bottom: 16px;
+    padding-bottom: 1rem;
     font-weight: 500;
   }
   &__link a {
@@ -26,84 +26,72 @@
     flex-direction: column;
     text-decoration: none;
     font-weight: 500;
-    color:$primaryColor_black;
-   
+    color: $primaryColor_black;
   }
   &__icon {
-    padding-top: 16px;
-   a{
-    padding-right: 8px;
-   }
+    padding-top: 1rem;
+    a {
+      padding-right: 0.5rem;
+    }
   }
-  &__lists{
-    padding-top: 16px;
+  &__lists {
+    padding-top: 1rem;
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
-&__list{
-    padding-right: 8px;
+  &__list {
+    padding-right: 0.5rem;
     list-style: none;
     font-weight: 300;
     color: $secondaryColor_seaGreen;
-}    
-        
-
   }
+}
 
-  @include tablet{
-    .footer{
-     
-      margin-top: 2.25rem;
-      &__section1{
-        display: flex;
-        flex-direction: row;
-      }
-      &__wordmark {
-        margin-right: 2.5rem;
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-        padding-right: 2.5rem;
-      }
-      
-      &__para{
-       
-        margin-left: 4.5rem;
-        font-size: 1.25rem;
-        line-height: 1.625rem;
-        padding-left: 4.5rem;
-        
-      }
-      &__link a {
-        
-        font-size: 1.25rem;
-        line-height: 1.625rem;
-        padding-left: 2.25rem;
-        margin-left: 2.25rem;
-       
-       
-      }
-      &__icon{
-        margin-top:4rem;
-      }
-      
-    }
-
-  }
-  @include desktop{
-    .footer{
-    &__mainSection{
+@include tablet {
+  .footer {
+    margin-top: 2.25rem;
+    &__section1 {
       display: flex;
       flex-direction: row;
-      
     }
-    &__icon{
+    &__wordmark {
+      margin-right: 2.5rem;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      padding-right: 2.5rem;
+    }
+
+    &__para {
+      margin-left: 4.5rem;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+      padding-left: 4.5rem;
+    }
+    &__link a {
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+      padding-left: 2.25rem;
+      margin-left: 2.25rem;
+    }
+    &__icon {
+      margin-top: 4rem;
+    }
+  }
+}
+@include desktop {
+  .footer {
+    &__mainSection {
+      display: flex;
+      flex-direction: row;
+    }
+    &__icon {
       padding: 0;
       margin: 0;
       padding-left: 2.25rem;
       margin-left: 2.25rem;
       padding-bottom: 2.25rem;
     }
-    }
   }
+}
