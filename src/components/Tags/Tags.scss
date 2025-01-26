@@ -10,7 +10,7 @@
   background-color: $secondaryColor_sage;
   padding: 0;
   position: relative;
-  top: 50px;
+  top: 3.125rem;
   &-title {
     margin-top: 1rem;
     font-weight: 500;
@@ -29,7 +29,7 @@
     border: 2px solid $primaryColor_green;
     color: $primaryColor_green;
     background-color: white;
-    font-weight: bold;
+    font-weight: 500;
     border-radius: 0.75rem;
     &--selected {
       font-weight: bold;
@@ -41,7 +41,7 @@
 @include tablet {
   .tags-panel {
     &__title {
-        margin-top: 1.5rem;
+      margin-top: 1.5rem;
       font-size: 1.5rem;
       line-height: 1.875rem;
     }

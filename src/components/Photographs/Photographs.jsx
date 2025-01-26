@@ -1,14 +1,19 @@
-import photos from "../../assets/Data/photos.json";
+import { Link } from "react-router-dom";
 import "./Photographs.scss";
-
-const Photographs = ({ selectedTag }) => {
+import axios from "axios";
+import { API_KEY } from "../../Utils/api";
+import { API_URL } from "../../Utils/api";
+import React, { useState, useEffect } from "react";
+const Photographs = ({ selectedTag, photos }) => {
   const filteredPhotos = selectedTag
     ? photos.filter((photo) => photo.tags.includes(selectedTag))
     : photos;
+
   return (
     <div className="photo-card">
       {filteredPhotos.map((photo) => (
-        <section className="photos">
+        <Link to={`${photo.id}`} key={photo.id} className="photos">
+          {/* <section  key={photo.id}> */}
           <div className="photos__image-container">
             <img
               className="photos__img"
@@ -19,6 +24,7 @@ const Photographs = ({ selectedTag }) => {
               <p>{photo.photographer}</p>
             </div>
           </div>
+
           <ul className="photos__tag-list">
             {photo.tags.map((tag, index) => (
               <li key={index} className="photos__tag-list-item">
@@ -26,7 +32,8 @@ const Photographs = ({ selectedTag }) => {
               </li>
             ))}
           </ul>
-        </section>
+          {/* </section> */}
+        </Link>
       ))}
     </div>
   );

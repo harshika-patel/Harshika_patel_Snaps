@@ -1,4 +1,5 @@
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 import facebook from "../../assets/Icons/Facebook.svg";
 import twitter from "../../assets/Icons/X_twitter.svg";
 import instagram from "../../assets/Icons/Instagram.svg";
@@ -8,17 +9,19 @@ export default function Footer() {
     <section className="footer">
       <div className="footer__mainSection">
         <div className="footer__section1">
-          <p className="footer__wordmark">Snaps</p>
-          <div className="footer__para">
-            <p>For photographers</p>
-            <p>Hire talent</p>
-            <p>Inspiration</p>
-          </div>
-          <div className="footer__link">
-            <a href="/">About</a>
-            <a href="/">Careers</a>
-            <a href="/">Support</a>
-          </div>
+          <Link to="/" className="footer__wordmark-link">
+            <p className="footer__wordmark">Snaps</p>
+            </Link>
+            <div className="footer__para">
+              <p>For photographers</p>
+              <p>Hire talent</p>
+              <p>Inspiration</p>
+            </div>
+            <div className="footer__link">
+              <a href="/">About</a>
+              <a href="/">Careers</a>
+              <a href="/">Support</a>
+            </div>
         </div>
 
         <div className="footer__icon">
@@ -36,7 +39,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="footer__lists_details">
+      <div className="footer__lists-details">
         <ul className="footer__lists">
           <li className="footer__list">&copy; 2025 Snaps</li>
           <li className="footer__list">. Terms</li>

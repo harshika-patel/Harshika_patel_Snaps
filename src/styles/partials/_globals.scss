@@ -8,30 +8,43 @@
     margin: 0;
 }
 body{
-    font-family: "Outfit";
-    font-size: 12px;
+    font-family: "Outfit",sans-serif;
+    font-size: 0.75rem;
     font-weight: 300;
-    line-height: 15px;
-    margin:0 16px;
-    margin-top:24px;
+    line-height: 0.9375rem;
+    margin:0 1rem;
+    margin-top:1.5rem;
     background-color: $primaryColor_pistachio;
     
 }
 h1{
-    font-family: "Outfit";
-    font-size: 18px;
+    font-family: "Outfit",sans-serif;
+    font-size: 1.125rem;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 1.5625rem;
 }
 .title{
-    font-family: "Newsreader";
-    font-size: 32px;
+    font-family: "Newsreader",sans-serif;
+    font-size: 2rem;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 2rem;
 }
 .label{
-    font-family: "Outfit";
-    font-size: 12px;
+    font-family: "Outfit",sans-serif;
+    font-size: 0.75rem;
     font-weight: 500;
-    line-height: 15px;
+    line-height: 0.9375rem;
+}
+p{
+    font-family: "Outfit",sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 0.9375rem;
+    color:$primaryColor_black;
+}
+label{
+    font-family: "Outfit",sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 0.9375rem;
 }
