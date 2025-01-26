@@ -1,2 +1,26 @@
-@use './styles/partials/fonts' as *;
-@use './styles/partials/globals' as *;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.main {
+  padding-top: 1rem; 
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 1000;
+  padding: 1.25rem 0;
+}
+
+
+.main {
+  margin-top: 1rem; 
+}

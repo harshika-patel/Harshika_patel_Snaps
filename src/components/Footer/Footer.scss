@@ -7,7 +7,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+ &__wordmark-link{
+  text-decoration: none;
+ }
   &__wordmark {
     font-family: "Newsreader";
     font-size: 2rem;
@@ -39,7 +41,7 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   &__list {
     padding-right: 0.5rem;
@@ -55,25 +57,26 @@
     &__section1 {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
     }
     &__wordmark {
       margin-right: 2.5rem;
       font-size: 2.5rem;
       line-height: 2.5rem;
       padding-right: 2.5rem;
+      
     }
 
-    &__para {
-      margin-left: 4.5rem;
-      font-size: 1.25rem;
+    &__para p {
+      padding-left:2rem;
+      font-size: 1rem;
       line-height: 1.625rem;
-      padding-left: 4.5rem;
+      margin-left: 2rem;
     }
     &__link a {
-      font-size: 1.25rem;
+      font-size: 1rem;
       line-height: 1.625rem;
-      padding-left: 2.25rem;
-      margin-left: 2.25rem;
+      margin-right: 3rem;
     }
     &__icon {
       margin-top: 4rem;
@@ -85,6 +88,13 @@
     &__mainSection {
       display: flex;
       flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      padding-bottom: 3rem;
+    }
+    &__section1 {
+      width:80%;
+     
     }
     &__icon {
       padding: 0;
