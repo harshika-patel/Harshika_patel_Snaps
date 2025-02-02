@@ -1,0 +1,107 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/globals" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ &__wordmark-link{
+  text-decoration: none;
+ }
+  &__wordmark {
+    font-family: "Newsreader";
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: $primaryColor_black;
+    padding-bottom: 1.5rem;
+  }
+
+  &__para {
+    padding-bottom: 1rem;
+    font-weight: 500;
+  }
+  &__link a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-weight: 500;
+    color: $primaryColor_black;
+  }
+  &__icon {
+    padding-top: 1rem;
+    a {
+      padding-right: 0.5rem;
+    }
+  }
+  &__lists {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+  &__list {
+    padding-right: 0.5rem;
+    list-style: none;
+    font-weight: 300;
+    color: $secondaryColor_seaGreen;
+  }
+}
+
+@include tablet {
+  .footer {
+    margin-top: 2.25rem;
+    &__section1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__wordmark {
+      margin-right: 2.5rem;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      padding-right: 2.5rem;
+      
+    }
+
+    &__para p {
+      padding-left:2rem;
+      font-size: 1rem;
+      line-height: 1.625rem;
+      margin-left: 2rem;
+    }
+    &__link a {
+      font-size: 1rem;
+      line-height: 1.625rem;
+      margin-right: 3rem;
+    }
+    &__icon {
+      margin-top: 4rem;
+    }
+  }
+}
+@include desktop {
+  .footer {
+    &__mainSection {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      padding-bottom: 3rem;
+    }
+    &__section1 {
+      width:80%;
+     
+    }
+    &__icon {
+      padding: 0;
+      margin: 0;
+      padding-left: 2.25rem;
+      margin-left: 2.25rem;
+      padding-bottom: 2.25rem;
+    }
+  }
+}
