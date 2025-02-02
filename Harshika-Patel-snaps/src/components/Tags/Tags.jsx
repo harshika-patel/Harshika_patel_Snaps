@@ -1,5 +1,6 @@
 import axios from "axios";
 import "./Tags.scss";
+import { API_URL_TAGS } from "../../Utils/api";
 import React, { useEffect, useState } from "react";
 const Tags = ({ selectedTag, setSelectedTag }) => {
   const [tags, setTags] = useState([]);
@@ -9,7 +10,7 @@ const Tags = ({ selectedTag, setSelectedTag }) => {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:8080/api/tags"
+        API_URL_TAGS
       )
       .then((response) => {
         setTags(response.data);

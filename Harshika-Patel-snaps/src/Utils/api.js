@@ -1,2 +1,2 @@
-export const API_URL="https://unit-3-project-c5faaab51857.herokuapp.com/photos";
-export const API_KEY="2be75b5d-e32d-478b-9e4c-b2a961341409";
+export const API_URL="http://localhost:8080/photos";
+export const API_URL_TAGS="http://localhost:8080/tags";
