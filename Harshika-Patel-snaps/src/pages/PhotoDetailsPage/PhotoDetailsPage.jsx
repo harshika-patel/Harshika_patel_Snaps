@@ -4,9 +4,9 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Form from "../../components/Form/Form";
 import { API_URL } from "../../Utils/api";
-import { API_KEY } from "../../Utils/api";
+
 import borderHeart from "../../assets/Icons/Like_Outline.svg";
-import filledHeart from "../../assets/Icons/Like_Filled.svg";
+
 
 function PhotoDetailsPage({ photos }) {
   const { photoId } = useParams();
@@ -30,7 +30,7 @@ function PhotoDetailsPage({ photos }) {
   const fetchComments = async () => {
     try {
       const { data } = await axios.get(
-        `${API_URL}/${photoId}/comments?api_key=${API_KEY}`
+        `${API_URL}/${photoId}/comments`
       );
       setComments(data);
     } catch (error) {
@@ -50,7 +50,7 @@ function PhotoDetailsPage({ photos }) {
     const fetchLikes = async () => {
       try {
         const response = await axios.get(
-          `${API_URL}/${photoId}?api_key=${API_KEY}`
+          `${API_URL}/${photoId}`
         );
         setLikes(response.data.likes);
         setTimestamp(response.data.timestamp);
@@ -60,7 +60,7 @@ function PhotoDetailsPage({ photos }) {
     };
 
     fetchLikes();
-  }, [API_URL, API_KEY, photoId]);
+  }, [API_URL, photoId]);
 
   const formatDate = (timestamp) => {
     if (!timestamp) return new Date().toLocaleDateString(); // If no timestamp, return today's date

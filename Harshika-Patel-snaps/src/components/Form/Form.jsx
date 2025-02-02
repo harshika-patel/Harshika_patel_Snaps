@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { API_KEY, API_URL } from "../../Utils/api";
+import { API_URL } from "../../Utils/api";
 import "./Form.scss";
 function Form({ fetchComments, photoId }) {
   const [name, setName] = useState("");
@@ -27,7 +27,7 @@ function Form({ fetchComments, photoId }) {
     setSubmitted(true);
     if (isFormValid()) {
       try {
-        await axios.post(`${API_URL}/${photoId}/comments?api_key=${API_KEY}`, {
+        await axios.post(`${API_URL}/${photoId}/comments`, {
           name,
           comment,
         });

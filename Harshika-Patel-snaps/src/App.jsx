@@ -4,6 +4,7 @@ import Header from './components/Header/Header'
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import { useState ,useEffect} from "react";
 import axios from 'axios';
+import { API_URL } from './Utils/api';  
 import HomePage from './pages/HomePage/HomePage';
 import PhotoDetailsPage from './pages/PhotoDetailsPage/PhotoDetailsPage'
 function App() {
@@ -15,7 +16,7 @@ function App() {
   
   
   useEffect(()=>{
-    axios.get("http://localhost:8080/api/photos")
+    axios.get(API_URL)
     .then((response)=>{
       setPhotos(response.data);
       setLoading(false);
